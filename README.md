@@ -54,7 +54,7 @@ python run_training.py 3d_lowres nnUNetTrainerV2
 ```
 
 ## Inference
-we use three stage framework to inference the online 100 validation set.  4 pretrained weights was provided to get the results, It is also needed to put the weights to the path `nnunet/inference/engine/`. which is provided on the [zenodo]()
+we use three stage framework to inference the online 100 validation set.  4 pretrained weights was provided to get the results, It is also needed to put the weights to the path `nnunet/inference/engine/`. which is provided on the [zenodo](https://zenodo.org/record/8372563)
 
 ```
 python predict_final.py
