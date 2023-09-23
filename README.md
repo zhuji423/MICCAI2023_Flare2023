@@ -54,7 +54,7 @@ python run_training.py 3d_lowres nnUNetTrainerV2
 ```
 
 ## Inference
-we use three stage framework to inference the online 100 validation set. we provide 4 pretrained weights to get the  results,which is provided on the [zenodo]()
+we use three stage framework to inference the online 100 validation set.  4 pretrained weights was provided to get the results, It is also needed to put the weights to the path `nnunet/inference/engine/`. which is provided on the [zenodo]()
 
 ```
 python predict_final.py
@@ -66,6 +66,5 @@ MACCAI FLARE2023 https://codalab.lisn.upsaclay.fr/competitions/12239
 
 MACCAI FLARE2022 Team balackbean https://github.com/Ziyan-Huang/FLARE22
 
-## Citations
 
 
