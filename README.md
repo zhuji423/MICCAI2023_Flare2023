@@ -3,7 +3,7 @@
 
 ## [Coarse to Fine Segmentation Method Enables Accurate and Efficient Segmentation of Organs and Tumor in Abdominal CT](https://openreview.net/forum?id=MnPJnCPyKY&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DMICCAI.org%2F2023%2FFLARE%2FAuthors%23your-submissions))
 
-*Hui Meng, Haochen Zhao, Deqian Yang, wang ping, Zhenpeng Li*
+*Hui Meng, Haochen Zhao, Deqian Yang, Wangsong ping, Zhenpeng Li*
 
 ---
 ## this is the official code of Team hiasbuaa for [FLARE23 Challenge](https://codalab.lisn.upsaclay.fr/competitions/12239)
