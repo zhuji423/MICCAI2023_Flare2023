@@ -60,6 +60,13 @@ we use three stage framework to inference the online 100 validation set.  4 pret
 python predict_final.py
 ```
 
+## Results
+
+Our method achieves the following performance on [FLARE23: Fast, Low-resource, and Accurate oRgan and Pan-cancer sEgmentation in Abdomen CT](https://codalab.lisn.upsaclay.fr/competitions/12239#learn_the_details-overview)
+| Model name       | Organs DICE | Tumor DICE |  Organ NSD  | Organ DSD |
+| ---------------- | :---------: | :--------: | :--------: | :-----: |
+| our method |   91.59%    |   47.12%   |   95.74%   |  39.94 |
+
 ## Reference
 
 MACCAI FLARE2023 https://codalab.lisn.upsaclay.fr/competitions/12239
