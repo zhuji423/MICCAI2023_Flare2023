@@ -54,10 +54,11 @@ python run_training.py 3d_lowres nnUNetTrainerV2
 ```
 
 ## Inference
+we use three stage framework to inference the online 100 validation set. we provide 4 pretrained weights to get the  results,which is provided on the [zenodo]()
+
 ```
-python inference.py [INPUT_FOLDER] [OUTPUT_FOLDER]
+python predict_final.py
 ```
-Before the Inference, you should move the best nnunet checkpoints to replace the three files in folder __'checkpoints'__.
 
 ## Reference
 
