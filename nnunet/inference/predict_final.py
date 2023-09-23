@@ -256,8 +256,7 @@ for input_file_nii_gz in paths:
                                    np.array([1.7632679173989854, 1.4395425277931828, 1.4395425277931828]),
                                    3, 1, force_separate_z=False, order_z_data=0, order_z_seg=0)  # 1,z,x,y
     torch.cuda.empty_cache()
-    model = get_fine_model(path='engine/tumor_model_best2.pth')
-    #model = get_fine_model(path='E:/1pao/Infer-MedSeg-With-Low-Resource-main/Infer/engine/tumor_model_best_1900.pth')
+    model = get_fine_model(path='engine/tumor_model_1.pth')
     stage2_class_probabilities = predict_3D(stage2_data_resample, patch_size=[96, 160, 192], step_size=0.5)
     stage2_class_probabilities = sample_resizeAndArgmax(stage2_class_probabilities, stage2_data_shape)
     torch.cuda.empty_cache()
@@ -273,7 +272,7 @@ for input_file_nii_gz in paths:
                                        np.array([1.7632679173989854, 1.4395425277931828, 1.4395425277931828]),
                                        3, 1, force_separate_z=False, order_z_data=0, order_z_seg=0)  # 1,z,x,y
     torch.cuda.empty_cache()
-    model = get_fine_model(path='engine/tumor_model_best_1550.pth')
+    model = get_fine_model(path='engine/tumor_model_2.pth')
     # model = get_fine_model(path=args.best_path)
     stage3_class_probabilities = predict_3D(stage3_data, patch_size=[96, 128, 192], step_size=0.5)
     stage3_class_probabilities = sample_resizeAndArgmax(stage3_class_probabilities, stage3_data_shape)
@@ -315,7 +314,7 @@ for input_file_nii_gz in paths:
                                    np.array([2.5, 1.25834116, 1.25834116]),
                                    3, 1, force_separate_z=False, order_z_data=0, order_z_seg=0)  # 1,z,x,y
     torch.cuda.empty_cache()
-    model = get_organ_model(path='engine/6tumor_model_best_2450_organ_stage4.pth')
+    model = get_organ_model(path='engine/organ_model.pth')
     stage4_class_probabilities = predict_3D(stage4_data, patch_size=[64, 160, 224], step_size=0.5)  # return torch-array
     stage4_class_probabilities = sample_resizeAndArgmax(stage4_class_probabilities, stage4_data_shape)
     torch.cuda.empty_cache()
