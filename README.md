@@ -1,11 +1,12 @@
 #  Solution of team HIASBUAA of FLARE2023 Challenge
+---
 
 ## [Coarse to Fine Segmentation Method Enables Accurate and Efficient Segmentation of Organs and Tumor in Abdominal CT](https://openreview.net/forum?id=MnPJnCPyKY&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DMICCAI.org%2F2023%2FFLARE%2FAuthors%23your-submissions))
 
 *Hui Meng, Haochen Zhao, Deqian Yang, wang ping, Zhenpeng Li*
 
-
-# this is the official code of Team hiasbuaa for [FLARE23 Challenge](https://codalab.lisn.upsaclay.fr/competitions/12239)
+---
+## this is the official code of Team hiasbuaa for [FLARE23 Challenge](https://codalab.lisn.upsaclay.fr/competitions/12239)
 
 
 ### Overview of our work.
@@ -33,7 +34,7 @@ A brief description of the preprocessing method
 
 - intensity normalization: We gather pixel values in the cropped CT scans and subsequently truncateall data to fall within [0.5, 99.5] of foreground voxel values .Following that,z-score normalization is applied.
 
-- Resampling method for anisotropic data:: We perform image redirection to the desired orientation, followed by resampling all CT scans to match the median voxel spacing of the training dataset. Specifically, third-order spline interpolation is used for image resampling, and the nearest neighbor interpolation is employed for label resampling.
+- Resampling method for anisotropic data: We perform image redirection to the desired orientation, followed by resampling all CT scans to match the median voxel spacing of the training dataset. Specifically, third-order spline interpolation is used for image resampling, and the nearest neighbor interpolation is employed for label resampling.
 
 ## Environments and Installation
 - Ubuntu 20.04 LTS
